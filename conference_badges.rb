@@ -13,8 +13,8 @@ end
 def assign_rooms(speakers)
   room = 1 
   room_assignments = Array.new 
-  speakers.each do |speaker, index|
-    room_assignments << "Hello, #{speaker}! You'll be assigned to room #{index}!"
+  speakers.each do |speaker|
+    room_assignments << "Hello, #{speaker}! You'll be assigned to room #{room}!"
     room += 1 
   end 
   room_assignments
